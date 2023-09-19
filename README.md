@@ -2,6 +2,8 @@
 
 Boilerplate code for aframe library with Vite as a dev server and build tool.
 
+First of all **fork this repo**
+
 Install:
 
 ```shell
