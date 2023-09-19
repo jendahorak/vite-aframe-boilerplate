@@ -1,6 +1,11 @@
 import { defineConfig } from 'vite';
+import path from 'path';
 
-const projectName = import.meta.env.PROJECT_NAME || ''; // Access the custom environment variable
+// Get the current working directory (where Vite is executed)
+const currentDirectory = process.cwd();
+
+// Extract the project name from the folder name
+const projectName = path.basename(currentDirectory);
 
 export default defineConfig({
   base: `/${projectName}/`,
